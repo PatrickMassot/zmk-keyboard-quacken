@@ -131,7 +131,7 @@
         macro_layer {
             bindings = <
 &trans  &trans  &trans   &trans   &trans     &trans    &trans  &upsay   &trans &trans       &trans  &trans
-&trans  &trans  &trans   &trans   &trans  &trans    &trans  &trans   &trans &trand  &trans    &trans
+&trans  &trans  &trans   &trans   &trans  &trans    &trans  &trans   &trans &trans  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans   &trans       &trans    &trans
                         &trans   &trans  &trans    &trans  &trans   &trans
             >;
