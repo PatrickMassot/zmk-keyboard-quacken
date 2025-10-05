@@ -20,37 +20,37 @@
 #include "symbols_ergol.h"
 
 / {
-    combos {
-        compatible = "zmk,combos";
-        require-prior-idle-ms = <100>;
-        timeout-ms = <65>;
-
-        ENTER_COMBO {
-            bindings = <&kp ENTER>;
-            key-positions = <19 20>;
-        };
-        
-	ENTER_COMBO2 {
-            bindings = <&kp ENTER>;
-            key-positions = <20 21>;
-        };
-
-    };
+    /* combos { */
+    /*     compatible = "zmk,combos"; */
+    /*     require-prior-idle-ms = <100>; */
+    /*     timeout-ms = <65>; */
+    /*  */
+    /*     ENTER_COMBO { */
+    /*         bindings = <&kp ENTER>; */
+    /*         key-positions = <19 20>; */
+    /*     }; */
+    /*      */
+	/* ENTER_COMBO2 { */
+    /*         bindings = <&kp ENTER>; */
+    /*         key-positions = <20 21>; */
+    /*     }; */
+    /*  */
+    /* }; */
 
     macros {
-        Patrick: Patrick_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(P) &kp A &kp T &kp R &kp I &kp C &kp K>;
-            label = "PATRICK_MACRO";
-        };
-
-        Massot: Massot_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE &kp LS(M) &kp A &kp S &kp S &kp O &kp T>;
-            label = "MASSOT_MACRO";
-        };
+        /* Patrick: Patrick_macro { */
+        /*     compatible = "zmk,behavior-macro"; */
+        /*     #binding-cells = <0>; */
+        /*     bindings = <&kp LS(P) &kp A &kp T &kp R &kp I &kp C &kp K>; */
+        /*     label = "PATRICK_MACRO"; */
+        /* }; */
+        /*  */
+        /* Massot: Massot_macro { */
+        /*     compatible = "zmk,behavior-macro"; */
+        /*     #binding-cells = <0>; */
+        /*     bindings = <&kp SPACE &kp LS(M) &kp A &kp S &kp S &kp O &kp T>; */
+        /*     label = "MASSOT_MACRO"; */
+        /* }; */
 
         gfo: gfo {
             compatible = "zmk,behavior-macro";
@@ -78,48 +78,6 @@
             #binding-cells = <0>;
             bindings = <&kp SEMICOLON &kp NUMBER_3>;
             label = "GFE";
-        };
-
-        rintro: rintro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp R &kp I &kp N &kp T &kp R &kp O>;
-            label = "RINTRO";
-        };
-
-        rcases: rcases {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp R &kp C &kp A &kp S &kp E &kp S>;
-            label = "RCASES";
-        };
-
-        with: with {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp W &kp I &kp T &kp H>;
-            label = "WITH";
-        };
-
-        lib_search: lib_search {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A &kp P &kp P &kp L &kp Y &kp QMARK>;
-            label = "LIB_SEARCH";
-        };
-
-        simp: simp {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp I &kp M &kp P &kp SPACE &kp LBKT &kp RIGHT_BRACKET &kp LEFT>;
-            label = "SIMP";
-        };
-
-        rw: rw {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp R &kp W &kp SPACE &kp LBKT &kp RIGHT_BRACKET &kp LEFT>;
-            label = "RW";
         };
 
         upsay: upsay {
@@ -172,9 +130,9 @@
 
         macro_layer {
             bindings = <
-&trans  &trans  &with   &trans   &rw     &trans    &trans  &upsay   &rintro  &trans       &Patrick  &trans
-&trans  &trans  &simp   &trans   &trans  &trans    &trans  &trans   &trans   &lib_search  &trans    &trans
-&trans  &trans  &trans  &rcases  &trans  &trans    &trans  &Massot  &trans   &trans       &trans    &trans
+&trans  &trans  &trans   &trans   &trans     &trans    &trans  &upsay   &trans &trans       &trans  &trans
+&trans  &trans  &trans   &trans   &trans  &trans    &trans  &trans   &trans &trand  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans   &trans       &trans    &trans
                         &trans   &trans  &trans    &trans  &trans   &trans
             >;
         };
